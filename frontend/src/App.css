@@ -42,6 +42,55 @@
     transform: rotate(360deg);
   }
 }
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 2px black;
+}
+.wrapper-dark{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 20px 20px #fff;
+  background-color: #000;
+  color: white;
+  margin-bottom: 2px;
+}
+.land-wrapper{
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.land-wrapper-dark{
+  background-color: #000;
+}
+.land-btn{
+  width: 8rem;
+  height: 3rem;
+  background-color: #fff;
+  color: red; 
+  border: 1px solid #000;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 10px
+}
+.land-btn-dark{
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+.post-wrapper{
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 27rem;
+  position: relative;
+  margin: 1em;
+}
+.post-wrapper-dark{
+  border-color: #fff;
+}
 .create-post{
   width: 40%;
   border: 2px solid;
@@ -51,10 +100,24 @@
   margin: 10px;
   padding: 1%;
 }
-
+.icon {
+  margin-right: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.icon-dark {
+  margin-right: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: white;
+}
 .link {
   text-decoration: none;
   color: #000;
+}
+.link-dark {
+  text-decoration: none;
+  color: #fff;
 }
 /* input[type='File']{
   display: contents;
@@ -81,19 +144,20 @@
   margin: 3%;
 }
 .btn{
-  width: 10%;
+  width: 20%;
+  height: 2rem;
+  font-size: large;
   display: block;
   margin-left: 40%;
+  cursor: pointer;
 }
 .post-cont{
   width: 100%;
   display: flex;
   justify-content: center;
+  height: 30rem;
 }
 .post-cont-dark{
-  width: 100%;
-  display: flex;
-  justify-content: center;
   background-color: #000;
   color: white;
 }
@@ -101,38 +165,9 @@
   margin-right: 2rem;
   margin-top: 2rem;
   font-size: 2rem;
-
-}
-.wrapper{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  box-shadow: 0px 2px black;
-}
-.land-wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly
-}
-.land-btn{
-  width: 8rem;
-  height: 3rem;
-  background: #fff;
-  color: #000; 
-  border: 1px solid #000;
-  font-size: 2rem;
-  cursor: pointer;
-  border-radius: 10px
 }
 
-.post-wrapper{
-  width: 30%;
-  border: 1px solid black;
-  border-radius: 10px;
-  height: 27rem;
-  position: relative;
-  margin: 1em;
-}
+
 .land-name{
   position: absolute;
   margin: 2% 0 0 6%;
@@ -191,4 +226,8 @@
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
+}
+.postview-dark{
+  background-color: #000;
+  color: #fff;
 }

@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./App.css";
 import { useNavigate } from "react-router-dom";
+import { ThemeContext } from "./App";
 
 const CreatePost = () => {
+  const theme = useContext(ThemeContext)
   const {
     REACT_APP_CLOUDINARY_POST_API,
     REACT_APP_API_SERVER,
@@ -69,7 +71,7 @@ const CreatePost = () => {
   }
   return (
     <form
-      className="post-cont"
+      className={theme === "light" ? 'post-cont': "post-cont post-cont-dark"}
       method="post"
       action="#"
       onSubmit={async (e) => {

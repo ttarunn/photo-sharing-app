@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import {BsThreeDots} from 'react-icons/bs'
 import { GoHeart } from 'react-icons/go'
 import { PiShareFat } from 'react-icons/pi'
+import { ThemeContext } from '../App';
 
-  
+
 function PostData({userData}){
+  const theme = useContext(ThemeContext);
   const {author, location, img, likes, date, description} = userData
   
-
-  return <div className='post-wrapper'>
+  return <div className={theme === "light" ? 'post-wrapper': "post-wrapper post-wrapper-dark"}>
   <h3 className='land-name'>{author}</h3>
 
   <p className='land-location'>{location}</p>
@@ -32,6 +33,8 @@ function PostData({userData}){
 
 
 export default function PostView() {
+  const theme = useContext(ThemeContext);
+
   const [data2, setData2] = useState([]);
   const { REACT_APP_API_SERVER } = process.env
   console.log(REACT_APP_API_SERVER)
@@ -47,7 +50,7 @@ export default function PostView() {
   },[]);
 
   
-  return <div className='postview'>
+  return <div className={theme === "light" ? 'postview': "postview postview-dark"}>
     {data2.length > 0 && data2.map(userData => <PostData key={userData._id} userData={userData}/>)}
   </div>
 }
