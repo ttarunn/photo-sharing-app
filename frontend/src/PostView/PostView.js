@@ -34,11 +34,12 @@ function PostData({userData}){
 export default function PostView() {
   const [data2, setData2] = useState([]);
   const { REACT_APP_API_SERVER } = process.env
+  console.log(REACT_APP_API_SERVER)
   async function getPost(){
     const data0 = await fetch(`${REACT_APP_API_SERVER}/getPosts`);
     const json = await data0.json();
     setData2(json.result)
-
+    console.log(REACT_APP_API_SERVER)
   }
   useEffect( () => {
     getPost()
