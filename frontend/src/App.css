@@ -6,6 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
+.cont {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px red;
+  margin-bottom: 1rem;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +41,154 @@
   to {
     transform: rotate(360deg);
   }
+}
+.create-post{
+  width: 40%;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  height: 16em;
+  margin: 10px;
+  padding: 1%;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+/* input[type='File']{
+  display: contents;
+  content: counter(name);
+} */
+.input-div{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+.input-file{
+  border: 1px solid black;
+  width: 80%;
+  cursor: pointer;
+}
+
+.desc{
+  width: 80%;
+  margin: 3%;
+}
+.input {
+  width: 40%;
+  margin: 3%;
+}
+.btn{
+  width: 10%;
+  display: block;
+  margin-left: 40%;
+}
+.post-cont{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.post-cont-dark{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  color: white;
+}
+.icon {
+  margin-right: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  box-shadow: 0px 2px black;
+}
+.land-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly
+}
+.land-btn{
+  width: 8rem;
+  height: 3rem;
+  background: #fff;
+  color: #000; 
+  border: 1px solid #000;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 10px
+}
+
+.post-wrapper{
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 27rem;
+  position: relative;
+  margin: 1em;
+}
+.land-name{
+  position: absolute;
+  margin: 2% 0 0 6%;
+}
+.land-location{
+  position: absolute;
+  margin: 7.5% 0 0 6%;
+  color: #ccc;
+}
+.land-img{
+  /* style={{width:"100%", height:"14em", position:"absolute", top:"16%"}} */
+  position: absolute;
+  height: 14em;
+  width: 100%;
+  top: 16%;
+}
+.three-dot{
+  position: absolute;
+  margin: 5% 0 0 90%;
+  font-size: 1.5rem;
+}
+.go-heart{
+  /* style={{position:"absolute", margin:"79% 0 0 6%", fontSize:"1.5rem"}}  */
+  position: absolute;
+  margin: 79% 0 0 6%;
+  font-size: 1.5rem;
+}
+.share-icon{
+  /* style={{position:"absolute", margin:"79% 0 0 16%", fontSize:"1.5rem"}} */
+  position: absolute;
+  margin: 79% 0 0 16%;
+  font-size: 1.5rem;
+}
+.post-date{
+  /* style={{position:"absolute", margin:"79% 0 0 80%", fontSize:".8rem"}} */
+  position: absolute;
+  margin: 79% 0 0 80%;
+  font-size: .8rem;
+}
+.post-like{
+  /* style={{position:"absolute", margin:"86% 0 0 6%", fontSize:".8rem"}} */
+  position: absolute;
+  margin: 86% 0 0 6%;
+  font-size: .8rem;
+}
+.post-desc{
+  /* style={{position:"absolute", margin:"94% 0 0 6%", fontSize:"1rem"}} */
+  position: absolute;
+  margin: 94% 0 0 6%;
+  font-size: 1rem;
+}
+.postview{
+  /* style={{width: "100%", display:"flex", flexDirection:"column", alignContent:"center", flexWrap:"wrap"}} */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
 }
