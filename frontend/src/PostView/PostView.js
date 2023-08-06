@@ -10,13 +10,13 @@ function PostData({userData}){
   const {author, location, img, likes, date, description} = userData
   
   return <div className={theme === "light" ? 'post-wrapper': "post-wrapper post-wrapper-dark"}>
-  <h3 className='land-name'>{author}</h3>
+  <h3 className='post-name'>{author}</h3>
 
-  <p className='land-location'>{location}</p>
+  <p className='post-location'>{location}</p>
 
   <BsThreeDots className='three-dot'/>
 
-  <img  src={img} alt="post" className='land-img'/>
+  <img  src={img} alt="post" className='post-img'/>
 
   <GoHeart className='go-heart'/>
 
@@ -37,12 +37,12 @@ export default function PostView() {
 
   const [data2, setData2] = useState([]);
   const { REACT_APP_API_SERVER } = process.env
-  console.log(REACT_APP_API_SERVER)
+  
   async function getPost(){
     const data0 = await fetch(`${REACT_APP_API_SERVER}/getPosts`);
     const json = await data0.json();
     setData2(json.result)
-    console.log(REACT_APP_API_SERVER)
+    
   }
   useEffect( () => {
     getPost()

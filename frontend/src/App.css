@@ -42,12 +42,12 @@
     transform: rotate(360deg);
   }
 }
-.wrapper{
+.wrapper {
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 2px black;
 }
-.wrapper-dark{
+.wrapper-dark {
   display: flex;
   justify-content: space-between;
   box-shadow: 20px 20px #fff;
@@ -55,43 +55,42 @@
   color: white;
   margin-bottom: 2px;
 }
-.land-wrapper{
+.land-wrapper {
   padding-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  
 }
-.land-wrapper-dark{
+.land-wrapper-dark {
   background-color: #000;
 }
-.land-btn{
+.land-btn {
   width: 8rem;
   height: 3rem;
   background-color: #fff;
-  color: red; 
+  color: red;
   border: 1px solid #000;
   font-size: 2rem;
   cursor: pointer;
-  border-radius: 10px
+  border-radius: 10px;
 }
-.land-btn-dark{
+.land-btn-dark {
   background-color: #000;
   color: #fff;
   border-color: #fff;
 }
-.post-wrapper{
+.post-wrapper {
   width: 30%;
   border: 1px solid black;
   border-radius: 10px;
-  height: 27rem;
+  height: 26em;
   position: relative;
   margin: 1em;
 }
-.post-wrapper-dark{
+.post-wrapper-dark {
   border-color: #fff;
 }
-.create-post{
+.create-post {
   width: 40%;
   border: 2px solid;
   border-radius: 10px;
@@ -123,19 +122,18 @@
   display: contents;
   content: counter(name);
 } */
-.input-div{
+.input-div {
   display: flex;
   justify-content: center;
   width: 100%;
-  
 }
-.input-file{
+.input-file {
   border: 1px solid black;
   width: 80%;
   cursor: pointer;
 }
 
-.desc{
+.desc {
   width: 80%;
   margin: 3%;
 }
@@ -143,7 +141,7 @@
   width: 40%;
   margin: 3%;
 }
-.btn{
+.btn {
   width: 20%;
   height: 2rem;
   font-size: large;
@@ -151,13 +149,13 @@
   margin-left: 40%;
   cursor: pointer;
 }
-.post-cont{
+.post-cont {
   width: 100%;
   display: flex;
   justify-content: center;
   height: 30rem;
 }
-.post-cont-dark{
+.post-cont-dark {
   background-color: #000;
   color: white;
 }
@@ -167,59 +165,58 @@
   font-size: 2rem;
 }
 
-
-.land-name{
+.post-name {
   position: absolute;
   margin: 2% 0 0 6%;
 }
-.land-location{
+.post-location {
   position: absolute;
   margin: 7.5% 0 0 6%;
   color: #ccc;
 }
-.land-img{
+.post-img {
   /* style={{width:"100%", height:"14em", position:"absolute", top:"16%"}} */
   position: absolute;
   height: 14em;
   width: 100%;
   top: 16%;
 }
-.three-dot{
+.three-dot {
   position: absolute;
   margin: 5% 0 0 90%;
   font-size: 1.5rem;
 }
-.go-heart{
+.go-heart {
   /* style={{position:"absolute", margin:"79% 0 0 6%", fontSize:"1.5rem"}}  */
   position: absolute;
   margin: 79% 0 0 6%;
   font-size: 1.5rem;
 }
-.share-icon{
+.share-icon {
   /* style={{position:"absolute", margin:"79% 0 0 16%", fontSize:"1.5rem"}} */
   position: absolute;
   margin: 79% 0 0 16%;
   font-size: 1.5rem;
 }
-.post-date{
+.post-date {
   /* style={{position:"absolute", margin:"79% 0 0 80%", fontSize:".8rem"}} */
   position: absolute;
   margin: 79% 0 0 80%;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-.post-like{
+.post-like {
   /* style={{position:"absolute", margin:"86% 0 0 6%", fontSize:".8rem"}} */
   position: absolute;
   margin: 86% 0 0 6%;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-.post-desc{
+.post-desc {
   /* style={{position:"absolute", margin:"94% 0 0 6%", fontSize:"1rem"}} */
   position: absolute;
   margin: 94% 0 0 6%;
   font-size: 1rem;
 }
-.postview{
+.postview {
   /* style={{width: "100%", display:"flex", flexDirection:"column", alignContent:"center", flexWrap:"wrap"}} */
   width: 100%;
   display: flex;
@@ -227,7 +224,56 @@
   align-content: center;
   flex-wrap: wrap;
 }
-.postview-dark{
+.postview-dark {
   background-color: #000;
   color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .land-wrapper {
+    flex-direction: column;
+  }
+  .land-btn {
+    margin: 1em 0 1em 0;
+    width: 10em;
+  }
+  .post-wrapper {
+    width: 20em;
+  }
+  .go-heart {
+    margin: 12.5em 0 0 .8em;
+  }
+  .share-icon {
+    margin: 12.5em 0 0 2em;;
+  }
+  .post-date {
+    margin: 23.5em 0 0 19em;
+  }
+  .post-like {
+    margin: 25.5em 0 0 1.7em;
+  }
+  .post-desc {
+    margin: 22em 0 0 1.4em;
+  }
+  .post-location {
+    margin: 1.7em 0 0 1.2em;
+  }
+  .create-post {
+    width: 25em;
+    height: 20em;
+  }
+  .input {
+    width: 20em;
+    margin: 1em;
+  }
+  .desc {
+    width: 20em;
+    margin: 1em;
+  }
+  .btn {
+    width: 5em;
+    margin: 1em 0 0 7em;
+  }
+  .land-image{
+    width: 22em;
+  }
 }

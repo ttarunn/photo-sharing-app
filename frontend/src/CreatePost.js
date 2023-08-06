@@ -10,7 +10,7 @@ const CreatePost = () => {
     REACT_APP_API_SERVER,
     REACT_APP_CLOUD_NAME,
   } = process.env;
-  console.log(REACT_APP_CLOUDINARY_POST_API);
+
   const navigate = useNavigate();
 
   let date = new Date();
@@ -33,7 +33,7 @@ const CreatePost = () => {
     data.append("cloud_name", REACT_APP_CLOUD_NAME);
 
     const cdnUpload = await fetch(
-      "https://api.cloudinary.com/v1_1/dxwzjsp7z/image/upload",
+      REACT_APP_CLOUDINARY_POST_API,
       {
         method: "POST",
         body: data,
@@ -62,12 +62,11 @@ const CreatePost = () => {
       });
   };
   function updateIMG() {
-    console.log("up", img);
     setFormData({
       ...formData,
       img: img,
     });
-    console.log(formData.img);
+    
   }
   return (
     <form
@@ -76,7 +75,7 @@ const CreatePost = () => {
       action="#"
       onSubmit={async (e) => {
         e.preventDefault();
-        console.log(formData);
+        
         await postData();
         navigate("/postview");
       }}
@@ -91,7 +90,7 @@ const CreatePost = () => {
             className="input-file"
             onChange={async (e) => {
               setUploadStatus(true);
-              console.log(e.target.files[0]);
+              
               await cdnApi(e.target.files[0]);
             }}
           />
