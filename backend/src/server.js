@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const PORT = process.env.PORT || 8080
+
 dotenv.config();
 
 app.use(cors());
@@ -51,6 +52,40 @@ app.get('/getPosts', (req, res)=> {
         res.json(400).json({
             status: "Failed",
         })
+    })
+});
+
+app.put('/likesinc/:id', (req, res) => {
+    
+    const id = req.params.id
+    Post.findOneAndUpdate({
+        _id : id
+    },{ $inc: { likes: 1 }}).then(result => {
+        res.status(201).json({
+            message: "Update Success",
+            data: result
+        })
+        }).catch(err => {
+            res.status(400).json({
+                status: "Failed",
+            })
+    })
+});
+
+app.put('/likesdec/:id', (req, res) => {
+    
+    const id = req.params.id
+    Post.findOneAndUpdate({
+        _id : id
+    },{ $inc: { likes: -1 }}).then(result => {
+        res.status(201).json({
+            message: "Update Success",
+            data: result
+        })
+        }).catch(err => {
+            res.status(400).json({
+                status: "Failed",
+            })
     })
 });
 
