@@ -1,10 +1,12 @@
 import "./App.css";
-import { AiOutlineCamera } from "react-icons/ai";
+import { AiOutlineCamera, AiFillCopyrightCircle } from "react-icons/ai";
 import Routers from "./Routers";
 import { Link } from "react-router-dom";
-import { BsInstagram } from "react-icons/bs";
-import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
+import { BsInstagram, BsSun } from "react-icons/bs";
+import { MdDarkMode } from "react-icons/md";
 import { createContext, useState } from "react";
+
+
 export const ThemeContext = createContext("light");
 function App() {
   const [theme, setTheme] = useState("light");
@@ -21,20 +23,20 @@ function App() {
       <ThemeContext.Provider value={theme}>
         <Routers>
           <div className={theme === "light" ? "wrapper" : "wrapper-dark"}>
-            <h1 style={{ marginLeft: "2rem" }}>
+            <h1 className="h1">
               <Link
                 to={"/"}
                 className={theme === "light" ? "link" : "link-dark"}
               >
-                <BsInstagram fontSize={"1.5rem"} />
+                <BsInstagram fontSize={"1.5rem"} className="insta" />
                 Insta Clone
               </Link>
             </h1>
             <div>
               {theme === "light" ? (
-                <MdOutlineDarkMode onClick={toggleTheme} className="icon" />
-              ) : (
                 <MdDarkMode onClick={toggleTheme} className="icon" />
+              ) : (
+                <BsSun onClick={toggleTheme} className="icon" />
               )}
               <Link to={"/createPost"} className="link">
                 <AiOutlineCamera
@@ -44,6 +46,9 @@ function App() {
             </div>
           </div>
         </Routers>
+        <div className="footer">
+          <AiFillCopyrightCircle/> This Site is Developed By Tarun...!
+        </div>
       </ThemeContext.Provider>
     </div>
   );

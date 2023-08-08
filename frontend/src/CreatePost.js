@@ -127,6 +127,7 @@ const CreatePost = () => {
         <input
           type="text"
           placeholder="Description"
+          maxLength={80}
           name="description"
           className="desc"
           onChange={(e) => {
@@ -136,6 +137,7 @@ const CreatePost = () => {
             });
           }}
         />
+        <div style={{margin:"1%"}}>Description Length Should not be greater than 80.</div>
         <button type="submit" className="btn" onClick={() => updateIMG()}>
           Post
         </button>

@@ -56,7 +56,7 @@
   margin-bottom: 2px;
 }
 .land-wrapper {
-  padding-top: 1rem;
+  padding: 1rem 0 0.5rem 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -81,7 +81,7 @@
 }
 .post-wrapper {
   width: 30%;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 10px;
   height: 26em;
   position: relative;
@@ -118,10 +118,6 @@
   text-decoration: none;
   color: #fff;
 }
-/* input[type='File']{
-  display: contents;
-  content: counter(name);
-} */
 .input-div {
   display: flex;
   justify-content: center;
@@ -135,7 +131,7 @@
 
 .desc {
   width: 80%;
-  margin: 3%;
+  margin: 2% 0 0 0;
 }
 .input {
   width: 40%;
@@ -146,9 +142,18 @@
   height: 2rem;
   font-size: large;
   display: block;
-  margin-left: 40%;
+  margin: 4% 0 0 40%;
   cursor: pointer;
+  background-color: #fff;
+  border-radius: 20px;
 }
+.land-btn:hover {
+  background-color: red;
+  border-color: #fff;
+}
+/* .link:hover{
+  color: white;
+} */
 .post-cont {
   width: 100%;
   display: flex;
@@ -228,6 +233,30 @@
   background-color: #000;
   color: #fff;
 }
+.like {
+  color: red;
+}
+.h1 {
+  margin-left: 0.5em;
+}
+.insta {
+  margin-right: 0.2em;
+}
+.land-image {
+  height: 25rem;
+  box-shadow: 5px 5px whitesmoke;
+}
+.footer {
+  width: 100%;
+  height: 2rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: larger;
+  border-top: 2px solid #fff;
+  padding: 1rem;
+}
+
 @media screen and (max-width: 500px) {
   .land-wrapper {
     flex-direction: column;
@@ -240,10 +269,10 @@
     width: 20em;
   }
   .go-heart {
-    margin: 12.5em 0 0 .8em;
+    margin: 12.5em 0 0 0.8em;
   }
   .share-icon {
-    margin: 12.5em 0 0 2em;;
+    margin: 12.5em 0 0 2em;
   }
   .post-date {
     margin: 23.5em 0 0 19em;
@@ -273,7 +302,7 @@
     width: 5em;
     margin: 1em 0 0 7em;
   }
-  .land-image{
+  .land-image {
     width: 22em;
   }
 }
