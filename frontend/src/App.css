@@ -46,14 +46,16 @@
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 2px black;
+  height: 4.5rem;
 }
 .wrapper-dark {
   display: flex;
   justify-content: space-between;
-  box-shadow: 20px 20px #fff;
+  box-shadow: 0px 20px #fff;
   background-color: #000;
   color: white;
-  margin-bottom: 2px;
+  border-bottom: 1.5px solid white;
+  height: 4.3rem;
 }
 .land-wrapper {
   padding: 1rem 0 0.5rem 0;
@@ -100,13 +102,12 @@
   padding: 1%;
 }
 .icon {
-  margin-right: 2rem;
-  margin-top: 2rem;
+  margin: 1rem 2rem 0 0;
   font-size: 2rem;
 }
 .icon-dark {
   margin-right: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 2rem;
   color: white;
 }
@@ -151,9 +152,6 @@
   background-color: red;
   border-color: #fff;
 }
-/* .link:hover{
-  color: white;
-} */
 .post-cont {
   width: 100%;
   display: flex;
@@ -163,11 +161,6 @@
 .post-cont-dark {
   background-color: #000;
   color: white;
-}
-.icon {
-  margin-right: 2rem;
-  margin-top: 2rem;
-  font-size: 2rem;
 }
 
 .post-name {
@@ -237,17 +230,18 @@
   color: red;
 }
 .h1 {
-  margin-left: 0.5em;
+  margin: 1rem 0 0 0.5rem;
 }
 .insta {
-  margin-right: 0.2em;
+  margin: 0 0.2rem 0 0;
+  font-size: 1.7rem;
 }
 .land-image {
   height: 25rem;
   box-shadow: 5px 5px whitesmoke;
 }
 .footer {
-  width: 100%;
+  width: 97.5%;
   height: 2rem;
   background-color: #000;
   color: #fff;

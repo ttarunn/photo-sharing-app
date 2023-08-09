@@ -28,7 +28,7 @@ function App() {
                 to={"/"}
                 className={theme === "light" ? "link" : "link-dark"}
               >
-                <BsInstagram fontSize={"1.5rem"} className="insta" />
+                <BsInstagram className="insta" />
                 Insta Clone
               </Link>
             </h1>

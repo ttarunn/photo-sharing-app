@@ -93,6 +93,7 @@ const CreatePost = () => {
               
               await cdnApi(e.target.files[0]);
             }}
+            required
           />
         </div>
         {img === "" && uploadStatus ? (
@@ -111,6 +112,7 @@ const CreatePost = () => {
               author: e.target.value,
             });
           }}
+          required
         />
         <input
           type="text"
@@ -123,6 +125,7 @@ const CreatePost = () => {
               location: e.target.value,
             });
           }}
+          required
         />
         <input
           type="text"
@@ -136,6 +139,7 @@ const CreatePost = () => {
               description: e.target.value,
             });
           }}
+          required
         />
         <div style={{margin:"1%"}}>Description Length Should not be greater than 80.</div>
         <button type="submit" className="btn" onClick={() => updateIMG()}>
