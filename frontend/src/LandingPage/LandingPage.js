@@ -1,9 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../App";
 
 export default function LandingPage() {
   const theme = useContext(ThemeContext);
+
+  async function apiCall() {
+    await fetch(`${process.env.REACT_APP_API_SERVER}`);
+  }
+
+
+  useEffect(()=> {
+    //calling api on landing page 
+    apiCall()
+  },[]);
 
   return (
     <div

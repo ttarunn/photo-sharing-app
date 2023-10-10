@@ -96,6 +96,9 @@ export default function PostView() {
     // eslint-disable-next-line
   }, []);
 
+  if(data2.length === 0){
+    return <div className={`${theme === "light" ? "shimmer" : "shimmer-dark"}`}>Wait Api Will Take Time to fetch data from server...</div>
+  }
   return (
     <div className={theme === "light" ? "postview" : "postview postview-dark"}>
       {data2.length > 0 &&

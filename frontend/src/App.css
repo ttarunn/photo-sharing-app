@@ -66,6 +66,18 @@
 .land-wrapper-dark {
   background-color: #000;
 }
+.shimmer{
+  height: 62vh;
+  padding: 2rem;
+  text-align: center;
+}
+.shimmer-dark{
+  padding: 2rem;
+  height: 62vh;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
 .land-btn {
   width: 8rem;
   height: 3rem;

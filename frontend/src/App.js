@@ -47,7 +47,7 @@ function App() {
           </div>
         </Routers>
         <div className="footer">
-          <AiFillCopyrightCircle/> This Site is Developed By Tarun...!
+          <AiFillCopyrightCircle/> Made With ❤️!
         </div>
       </ThemeContext.Provider>
     </div>

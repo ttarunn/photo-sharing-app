@@ -5,6 +5,7 @@ const Post = require('./PostSchema');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
+
 const PORT = process.env.PORT || 8080
 
 dotenv.config();
@@ -90,7 +91,9 @@ app.put('/likesdec/:id', (req, res) => {
 });
 
 app.use('/',(req,res) => {
-    res.send('Hello')
+    res.status(200).json({
+        message:'Api Started'
+    })
 })
 
-app.listen(PORT)
+app.listen(PORT);
