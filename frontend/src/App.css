@@ -1,0 +1,302 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.cont {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px red;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 2px black;
+  height: 4.5rem;
+}
+.wrapper-dark {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 20px #fff;
+  background-color: #000;
+  color: white;
+  border-bottom: 1.5px solid white;
+  height: 4.3rem;
+}
+.land-wrapper {
+  padding: 1rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.land-wrapper-dark {
+  background-color: #000;
+}
+.land-btn {
+  width: 8rem;
+  height: 3rem;
+  background-color: #fff;
+  color: red;
+  border: 1px solid #000;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.land-btn-dark {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+.post-wrapper {
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 26em;
+  position: relative;
+  margin: 1em;
+}
+.post-wrapper-dark {
+  border-color: #fff;
+}
+.create-post {
+  width: 40%;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  height: 16em;
+  margin: 10px;
+  padding: 1%;
+}
+.icon {
+  margin: 1rem 2rem 0 0;
+  font-size: 2rem;
+}
+.icon-dark {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+.link {
+  text-decoration: none;
+  color: #000;
+}
+.link-dark {
+  text-decoration: none;
+  color: #fff;
+}
+.input-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.input-file {
+  border: 1px solid black;
+  width: 80%;
+  cursor: pointer;
+}
+
+.desc {
+  width: 80%;
+  margin: 2% 0 0 0;
+}
+.input {
+  width: 40%;
+  margin: 3%;
+}
+.btn {
+  width: 20%;
+  height: 2rem;
+  font-size: large;
+  display: block;
+  margin: 4% 0 0 40%;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.land-btn:hover {
+  background-color: red;
+  border-color: #fff;
+}
+.post-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 30rem;
+}
+.post-cont-dark {
+  background-color: #000;
+  color: white;
+}
+
+.post-name {
+  position: absolute;
+  margin: 2% 0 0 6%;
+}
+.post-location {
+  position: absolute;
+  margin: 7.5% 0 0 6%;
+  color: #ccc;
+}
+.post-img {
+  /* style={{width:"100%", height:"14em", position:"absolute", top:"16%"}} */
+  position: absolute;
+  height: 14em;
+  width: 100%;
+  top: 16%;
+}
+.three-dot {
+  position: absolute;
+  margin: 5% 0 0 90%;
+  font-size: 1.5rem;
+}
+.go-heart {
+  /* style={{position:"absolute", margin:"79% 0 0 6%", fontSize:"1.5rem"}}  */
+  position: absolute;
+  margin: 79% 0 0 6%;
+  font-size: 1.5rem;
+}
+.share-icon {
+  /* style={{position:"absolute", margin:"79% 0 0 16%", fontSize:"1.5rem"}} */
+  position: absolute;
+  margin: 79% 0 0 16%;
+  font-size: 1.5rem;
+}
+.post-date {
+  /* style={{position:"absolute", margin:"79% 0 0 80%", fontSize:".8rem"}} */
+  position: absolute;
+  margin: 79% 0 0 80%;
+  font-size: 0.8rem;
+}
+.post-like {
+  /* style={{position:"absolute", margin:"86% 0 0 6%", fontSize:".8rem"}} */
+  position: absolute;
+  margin: 86% 0 0 6%;
+  font-size: 0.8rem;
+}
+.post-desc {
+  /* style={{position:"absolute", margin:"94% 0 0 6%", fontSize:"1rem"}} */
+  position: absolute;
+  margin: 94% 0 0 6%;
+  font-size: 1rem;
+}
+.postview {
+  /* style={{width: "100%", display:"flex", flexDirection:"column", alignContent:"center", flexWrap:"wrap"}} */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.postview-dark {
+  background-color: #000;
+  color: #fff;
+}
+.like {
+  color: red;
+}
+.h1 {
+  margin: 1rem 0 0 0.5rem;
+}
+.insta {
+  margin: 0 0.2rem 0 0;
+  font-size: 1.7rem;
+}
+.land-image {
+  height: 25rem;
+  box-shadow: 5px 5px whitesmoke;
+}
+.footer {
+  width: 97.5%;
+  height: 2rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: larger;
+  border-top: 2px solid #fff;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .land-wrapper {
+    flex-direction: column;
+  }
+  .land-btn {
+    margin: 1em 0 1em 0;
+    width: 10em;
+  }
+  .post-wrapper {
+    width: 20em;
+  }
+  .go-heart {
+    margin: 12.5em 0 0 0.8em;
+  }
+  .share-icon {
+    margin: 12.5em 0 0 2em;
+  }
+  .post-date {
+    margin: 23.5em 0 0 19em;
+  }
+  .post-like {
+    margin: 25.5em 0 0 1.7em;
+  }
+  .post-desc {
+    margin: 22em 0 0 1.4em;
+  }
+  .post-location {
+    margin: 1.7em 0 0 1.2em;
+  }
+  .create-post {
+    width: 25em;
+    height: 20em;
+  }
+  .input {
+    width: 20em;
+    margin: 1em;
+  }
+  .desc {
+    width: 20em;
+    margin: 1em;
+  }
+  .btn {
+    width: 5em;
+    margin: 1em 0 0 7em;
+  }
+  .land-image {
+    width: 22em;
+  }
+}
